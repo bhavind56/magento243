@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <head>
+        <title>Blog</title>
+    </head>
+    <body>
+        <referenceBlock name="menu">
+            <action method="setActive">
+                <argument name="itemId" xsi:type="string">Sp_Blog::elements</argument>
+            </action>
+        </referenceBlock>
+	   <referenceContainer name="content">
+            <block class="Sp\Blog\Block\Adminhtml\Blog\Edit" name="blog_edit"/>
+        </referenceContainer>
+		 <referenceContainer name="left">
+            <block class="Sp\Blog\Block\Adminhtml\Blog\Edit\Tabs" name="blog_edit_tabs">
+				<block class="Sp\Blog\Block\Adminhtml\Blog\Edit\Tab\BlogInformation" 
+                        name="blog_edit_tabs_bloginformation"/>
+				 <action method="addTab">
+                    <argument name="name" xsi:type="string">bloginformation_section</argument>
+                    <argument name="block" xsi:type="string">blog_edit_tabs_bloginformation</argument>
+                </action>
+				<!--CedAddTab-->
+			</block>
+        </referenceContainer>
+    </body>
+</page>

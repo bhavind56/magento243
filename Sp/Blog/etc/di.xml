@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!--   3. Category page: Add sort by New products -->    
+    <type name="Magento\Catalog\Model\Config">
+        <plugin name="Sp_Blog::addCustomOptions" type="Sp\Blog\Plugin\Model\Config"/>
+    </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="catalog_productlist_toolbar_plugin" type="Sp\Blog\Plugin\Product\ProductList\Toolbar"/>
+    </type>
+
+    <!--  2.a.i. Sidebar  Checkout sidebar add static block-->
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="cms_block_sidebar_info" xsi:type="object">Sp\Blog\Model\CheckoutConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+    
+</config>

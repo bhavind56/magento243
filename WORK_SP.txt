@@ -1,0 +1,19 @@
+2. Load two CMS blocks on the checkout page.
+a. Locations:
+	i.Sidebar
+Ans: Logic that how to render cms block on checkout sidebar
+
+3. Category page: Add sort by New products.
+Ans: Logic that how to create sort 
+
+4. Create a new table named sp_blog with the below fields in it:
+	a. Table fields: Done
+	    id
+	    title
+    	    description
+ 	    is_active
+	    created_at
+	    updated_at
+	b. Implement backend Insert, Update & Delete functionality on it. :Done
+	c. Add a new grid on the product edit page to assign blogs to the current product. :Done
+	Ans: Also load on frontend side on product page 

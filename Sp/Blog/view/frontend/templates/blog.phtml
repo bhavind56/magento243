@@ -1,0 +1,20 @@
+<?php
+/**
+ *
+ * @var $block \Sp\Blog\Block\Blog
+ */
+?>
+<?php $_blog = $block->getBlogs(); ?>
+<?php if(count($_blog)){ ?>
+    <div class="blogs">
+        <h1>Blogs</h1>
+        <ul>
+        <?php foreach($_blog as $_blog){ ?>
+            <li>
+                <h3><?= $_blog->getTitle() ?></h3>
+                <p><?= $_blog->getDescription() ?></p>
+            </li>
+        <?php } ?>
+        </ul>
+    </div>
+<?php } ?>

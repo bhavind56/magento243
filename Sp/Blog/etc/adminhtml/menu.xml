@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Sp_Blog::elements" title="Blog" module="Sp_Blog" resource="Sp_Blog::elements" sortOrder="10"/>
+        <add 
+        	id="Sp_Blog::blog_index_index" 
+        	title="Manage Blog"
+        	translate="title"
+        	module="Sp_Blog" 
+        	resource="Sp_Blog::blog_index_index" 
+        	parent="Sp_Blog::elements"
+        	sortOrder="1" 
+        	action="blog/index/index"/>
+    </menu>
+</config>
