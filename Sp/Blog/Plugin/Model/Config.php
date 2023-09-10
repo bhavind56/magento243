@@ -1,5 +1,5 @@
 <?php
-
+/* 3. Category page: Add sort by New products.*/
 namespace Sp\Blog\Plugin\Model;
 use Magento\Store\Model\StoreManagerInterface;
 
