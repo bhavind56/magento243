@@ -2,7 +2,7 @@
 namespace Sp\Blog\Setup\Patch\Data;
 
 /*
-* 2 Load two CMS blocks on the checkout page
+* 2 Load two CMS blocks on the checkout page 
 */
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;

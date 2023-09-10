@@ -10,7 +10,7 @@
         <plugin name="catalog_productlist_toolbar_plugin" type="Sp\Blog\Plugin\Product\ProductList\Toolbar"/>
     </type>
 
-    <!--  2.a.i. Sidebar  Checkout sidebar add static block-->
+    <!-- 2.a.i. Sidebar  Checkout sidebar add static block -->
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">

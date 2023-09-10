@@ -9,7 +9,9 @@ class CheckoutConfigProvider implements ConfigProviderInterface {
 
     /**
      *
-     * @var LayoutInterface
+     * 2. Load two CMS blocks on the checkout page.
+     *  a. Locations:
+     *      i.Sidebar
      */
     private $_layout;
 
